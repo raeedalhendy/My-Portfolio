@@ -1,0 +1,38 @@
+.Conteiner-ball ,.Ball {
+    background-size: 100%;
+}
+
+
+
+.bacg {
+    height:100vh;
+}
+
+@media (max-width: 992px) {
+    .Container-Heroo{
+        flex-direction: column-reverse;
+    }
+    
+    
+}
+
+@media (max-width: 600px) {
+    .text{
+    font-size: 230%;
+}
+.text2{
+    font-size: 130%;
+}
+.botton{
+    width: 90px;
+}
+}
+
+@media (max-width: 400px) {
+    .text{
+        font-size: 120%;
+    }
+    .text2{
+        font-size:80%;
+    }
+} 

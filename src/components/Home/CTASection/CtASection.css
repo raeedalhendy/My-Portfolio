@@ -1,0 +1,22 @@
+.CTA{
+    border-radius: 32px;
+}
+
+@media (max-width : 992px) {
+    .BTN-C{
+        display: flex;
+        height: 45px;
+        width: 80px;
+        margin-top: 10px;
+    }
+    .BTN-C2{
+        display: none;
+        height: 45px;
+        width: 80px;
+    }
+}
+@media (max-width : 600px){
+    .UP{
+        top: -50px;
+    }
+}

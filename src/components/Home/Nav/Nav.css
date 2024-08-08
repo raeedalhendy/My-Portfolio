@@ -1,0 +1,36 @@
+html {
+    scroll-behavior: smooth;
+}
+.Nav-Mobo{
+    visibility: visible;
+    transform: translateY(0);
+    transition: var(--speed) ease;
+}
+@media (max-width : 992px){
+    .contaier-nav{
+        padding: 0 10px;
+    }
+    .ul-nav{
+        display: none;
+    }
+    .contaier-nav {
+        justify-content: none;
+    }
+    .moon{
+        display: none;
+    }
+    .nav-mobo-open{
+        display: flex;
+    }
+    .logo{
+        width: 100px;
+        height:100px;
+    }
+}
+@media (max-width : 400px){
+.logo{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+}
