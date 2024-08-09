@@ -11,6 +11,7 @@ import Balls2 from "./assets/img/Balls2.svg"
 
 
 
+
 export const logos =[
     Logo
 ]
@@ -52,7 +53,7 @@ export const Navlinks = [
         {
         id: 2,
         path: "#AboutMe",
-        title: "About me",
+        title: "About Me",
         },
         {
         id: 3,

@@ -2,10 +2,11 @@ import Nav from "./Nav/Nav";
 import Hero from "./Hero/Hero";
 import AboutMe from "./AboutMe/AboutMe";
 import Education from "./Education/Education";
+import CTASection from "./CTASection/CTASection";
+import CreativeWorks from "./CreativeWorks/CreativeWorks";
 import {LINE} from "./../../data"
 import {lineW} from "./../../data"
 import "../Home/Home.css"
-import CTASection from "./CTASection/CTASection";
 export default function Home() {
   
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <AboutMe/>
         <Education/>
         <CTASection/>
+        <CreativeWorks />
     </div>
   )
 }

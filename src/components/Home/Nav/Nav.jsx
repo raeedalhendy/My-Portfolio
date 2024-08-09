@@ -49,11 +49,11 @@ export default function Nav() {
             <img className="logo  h-28 rounded-full " src={logos} />
 
             <NavItmes links ={Navlinks}/>
-            <h1 onClick={toggleDarkMode} className=" dark:text-white moon text-5xl">
+            <h1 onClick={toggleDarkMode} className=" dark:text-white moon text-5xl hover:text-customPurple  dark:hover:text-customPurple cursor-pointer ">
                 {darkMode ? <FontAwesomeIcon icon="fa-regular fa-sun" /> : <FontAwesomeIcon icon="fa-regular fa-moon" />}
             </h1>
-            <h1 onClick={OpenNav} className="dark:text-white nav-mobo-open hidden text-3xl"><FontAwesomeIcon icon="fa-solid fa-bars" /></h1>
-            <h1 onClick={CloseNav} className="dark:text-white nav-mobo-close hidden text-3xl"><FontAwesomeIcon icon="fa-solid fa-x" /></h1>
+            <h1 onClick={OpenNav} className="dark:text-white nav-mobo-open hidden text-3xl text-customPurple"><FontAwesomeIcon icon="fa-solid fa-bars-staggered" /></h1>
+            <h1 onClick={CloseNav} className="dark:text-white nav-mobo-close hidden text-3xl text-customPurple"><FontAwesomeIcon icon="fa-solid fa-x" /></h1>
         </div>
         <MoboNav links ={Navlinks}/>
     </nav>
