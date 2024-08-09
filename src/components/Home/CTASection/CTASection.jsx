@@ -9,7 +9,7 @@ export default function CTASection() {
         <a href="#Home" className='dark:hidden '><img className='UP absolute right-2 top-0' src={Up} alt="Home" /></a>
         <div className='CTA w-4/5 px-  bg-customPurple h-80 rounded-xl flex items-center justify-center gap-16 relative'>
         <img src={Line} className='w-screen h-full'/>
-        <div className=' absolute pl-10'>
+        <div className='cta absolute pl-10'>
             <h1 className='text text-white font-bold text-3xl'>
                 Try me out, risk free!
             </h1>

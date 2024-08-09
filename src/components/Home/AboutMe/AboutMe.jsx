@@ -10,7 +10,10 @@ export default function AboutMe() {
         { name: 'HTML5', level: 90 },
         { name: 'CSS3', level: 90 },
         { name: 'JavaScript', level: 80 },
-        { name: 'React', level: 85 },
+        { name: 'React.Js', level: 85 },
+        { name: 'Ristful api', level: 85 },
+        { name: 'Tailwind', level: 90 },
+
     ];
     return (
     <div id='AboutMe' className='aboutme text-center	  flex  items-center  px-20 w-full   dark:from-[#1E293B] dark:via-[#334155] dark:to-[#0F172A]'>
