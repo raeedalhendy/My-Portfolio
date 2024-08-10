@@ -26,6 +26,9 @@
 .botton{
     width: 90px;
 }
+.bacg {
+    height:50vh;
+}
 }
 
 @media (max-width: 400px) {

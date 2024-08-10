@@ -32,7 +32,6 @@ const CloseNav = ()=>{
     if (open.style.display = "none") {
         open.style.display = "flex"
     }
-
 }
 
 export default function Nav() {

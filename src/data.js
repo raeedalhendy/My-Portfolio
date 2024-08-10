@@ -6,6 +6,10 @@ import LineW from "./assets/img/dividing line3.png"
 import Line2 from "./assets/img/dividing line2.png"
 import Line2W from "./assets/img/dividing line2W.png"
 import Balls2 from "./assets/img/Balls2.svg"
+import project1 from './assets/img/project1.png'
+import project2 from './assets/img/project2.png'
+import project3 from './assets/img/project3.png'
+import project4 from './assets/img/project4.png'
 
 
 
@@ -93,3 +97,42 @@ export const Navlinks = [
                     TitleE : "Front-end developer : Trainee at  From: 3/2024 to 8/2024 I have good experience in: Html Css Javascript Bootstrap Tailwind React Restful Api: Axios"
                 }
             ]
+
+    export const projectItem =[
+        {
+            id: 1,
+            demoProject : "https://test-lilac-theta-36.vercel.app/",
+            projectimg : project1 , 
+            projectname : "Sala Store",
+            technologies : "Technologies :",
+            technologiesused : "Html Css",
+            title: "Online store"
+        },
+        {
+            id: 2,
+            demoProject : "https://edujar-weld.vercel.app/",
+            projectimg : project2 , 
+            projectname : "Edujar",
+            technologies : "Technologies :",
+            technologiesused : "React.Js",
+            title : "Educational platform"
+        },
+        {
+            id: 3,
+            demoProject : "https://dash-stack-gray.vercel.app/",
+            projectimg : project3 , 
+            projectname : "DashStack",
+            technologies : "Technologies :",
+            technologiesused : "React MultiPage Api:Axios",
+            title : "Dashborad"
+        },
+        {
+            id: 4,
+            demoProject : "https://cozy-seven.vercel.app/",
+            projectimg : project4 , 
+            projectname : "Cozy",
+            technologies : "Technologies :",
+            technologiesused : "Html Css Javascript",
+            title: "Online store"
+        }
+    ]
