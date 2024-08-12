@@ -8,27 +8,38 @@ import go from './../../../assets/img/go2.svg';
 import full from './../../../assets/img/full.svg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-Modal.setAppElement('#root');
+Modal.setAppElement('#root')
 
 export default function ProjectDetiles() {
-  
+
   const { id } = useParams();
-  const project = projectItem.find(item => item.id === parseInt(id));
+  const [currentProjectId, setCurrentProjectId] = useState(parseInt(id))
+  const project = projectItem.find(item => item.id === currentProjectId)
 
-  // استبعاد المشروع الحالي من القائمة
-  const otherProjects = projectItem.filter(item => item.id !== parseInt(id));
+  const otherProjects = projectItem.filter(item => item.id !== currentProjectId)
 
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
-  // فتح الـ Modal
   const openModal = () => {
-    setIsModalOpen(true);
-  };
+    setIsModalOpen(true)
+  }
 
-  // إغلاق الـ Modal
   const closeModal = () => {
-    setIsModalOpen(false);
-  };
+    setIsModalOpen(false)
+  }
+
+  // الانتقال إلى المشروع التالي
+  const goToNextProject = () => {
+    const currentIndex = projectItem.findIndex(item => item.id === currentProjectId)
+    const nextIndex = (currentIndex + 1) % projectItem.length
+    setCurrentProjectId(projectItem[nextIndex].id);
+  }
+    // الغودة إلى المشروع السابق
+  const goToBackProject = () => {
+    const currentIndex = projectItem.findIndex(item => item.id === currentProjectId)
+    const nextIndex = (currentIndex - 1) % projectItem.length
+    setCurrentProjectId(projectItem[nextIndex].id);
+  }
 
   return (
     <div className='flex flex-col bg-gradient-to-r from-blue-50 via-blue-100 to-white dark:from-[#1E293B] dark:via-[#334155] dark:to-[#0F172A]'>
@@ -68,10 +79,19 @@ export default function ProjectDetiles() {
           </div>
         </div>
 
-        {/* عرض باقي المشاريع */}
         <div className='mt-10 w-full'>
-          <h2 className='text-2xl lg:text-3xl font-semibold mb-6 dark:text-white'>Other Projects</h2>
-          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20'>
+          <div className='flex justify-between'>
+              <h2 className='text-2xl lg:text-3xl font-semibold mb-6 dark:text-white'>The Best <span className='text-customPurple'>Projects</span></h2>
+              <div className='flex gap-10'>
+              <button onClick={goToNextProject} className='text-3xl text-customPurple'>
+                <FontAwesomeIcon icon="fa-solid fa-arrow-left" />
+              </button>
+              <button onClick={goToBackProject} className='text-3xl text-customPurple'>
+                <FontAwesomeIcon icon="fa-solid fa-arrow-right" />
+              </button>
+          </div>
+          </div>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 mt-6'>
             {otherProjects.map(el => (
               <div key={el.id} className='flex flex-col gap-10 w-full'>
                 <div className='flex flex-col bg-gray-200 rounded-2xl overflow-hidden shadow-lg relative group'>
@@ -100,7 +120,6 @@ export default function ProjectDetiles() {
       </div>
       <Footer/>
 
-      {/* Modal لتكبير الصورة */}
       <Modal
         isOpen={isModalOpen}
         onRequestClose={closeModal}
@@ -110,7 +129,7 @@ export default function ProjectDetiles() {
       >
         <div className="relative bg-white p-4 rounded-lg">
           <button  className="absolute top-2/4  right-0 m-2">
-          <h1 onClick={closeModal}  className="text-4xl text-customPurple"><FontAwesomeIcon icon="fa-solid fa-x" /></h1>
+            <h1 onClick={closeModal}  className="text-4xl text-customPurple"><FontAwesomeIcon icon="fa-solid fa-x" /></h1>
           </button>
           <img className='rounded-lg w-3/4 h-auto' src={project.projectimg} alt={project.projectname} />
         </div>
