@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import "./CreativeWorks.css";
 import go from './../../../assets/img/go2.svg';
 
+
 export default function ({items}) {
   return (
     <div className='Container-projects mt-14 flex flex-wrap  justify-evenly gap-8'>
@@ -21,7 +22,7 @@ export default function ({items}) {
           </div>
           <div className='flex justify-between pt-5'>
             <h1 className='font-semibold text-2xl dark:text-white'>{el.title}</h1>
-            <Link  to={`/project-details/${el.id}`}>
+            <Link to={`/project-details/${el.id}`}>
               <img src={go} alt="Go to details" />
             </Link>
           </div>

@@ -11,7 +11,7 @@ export default function Home() {
   
   return (
     
-    <div id="Home" className="CONTAINER flex flex-col gap-10 pt-28 w-fu bg-gradient-to-r from-blue-50 via-blue-100 to-white dark:from-[#1E293B] dark:via-[#334155] dark:to-[#0F172A] ">
+    <div id="Home" className="CONTAINER flex flex-col gap-10 pt-28 w-fu ">
         
         <Hero /> 
         <img src={LINE} className="w-full h-6 flex dark:hidden"/>

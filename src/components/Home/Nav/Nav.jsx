@@ -43,7 +43,7 @@ export default function Nav() {
     };
 
     return (
-    <nav className="contaier-nav px-16  fixed  top-0 w-full  bg-white opacity-95  dark:bg-Dark dark:bg-opacity-90 z-50 ">
+    <nav className="contaier-nav px-16  fixed  top-0 w-full  bg-white opacity-95  dark:bg-Dark dark:bg-opacity-90 z-40 ">
         <div className="flex items-center justify-between ">
             <img className="logo  h-28 rounded-full " src={logos} />
 

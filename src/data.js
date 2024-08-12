@@ -51,27 +51,27 @@ export const ball2=[
 export const Navlinks = [
         {
         id: 1,
-        path: "#Home",
+        path: "/#Home",
         title: "Home",
         },
         {
         id: 2,
-        path: "#AboutMe",
+        path: "/#AboutMe",
         title: "About Me",
         },
         {
         id: 3,
-        path: "#Education",
+        path: "/#Education",
         title: "Education",
         },
         {
         id: 4,
-        path: "#Projects",
+        path: "/#Projects",
         title: "Projects ",
         },
         {
         id: 5,
-        path: "#Contact",
+        path: "/#Contact",
         title: "Contact",
         }
     ];
@@ -106,7 +106,10 @@ export const Navlinks = [
             projectname : "Sala Store",
             technologies : "Technologies :",
             technologiesused : "Html Css",
-            title: "Online store"
+            title: "Online store",
+            desc : "It is a website dedicated to displaying projects and achievements in an elegant and organized manner. The website is designed using modern web technologies and features a simple, responsive design that displays the business in a clear and attractive way. Visitors can easily explore the projects, as each project includes a brief description and a distinctive image, which enhances the user experience and reflects the professionalism in providing the content.",
+            date : "9/5/2024",
+            github: "https://github.com/raeedalhendy/test"
         },
         {
             id: 2,
@@ -115,7 +118,10 @@ export const Navlinks = [
             projectname : "Edujar",
             technologies : "Technologies :",
             technologiesused : "React.Js",
-            title : "Educational platform"
+            title : "Educational platform",
+            desc : "It is an educational platform designed to provide an interactive learning experience for students. The website offers a variety of educational courses and academic content, with a responsive and user-friendly design that allows learners to access educational materials with ease." ,
+            date : "1/7/2024",
+            github: "https://github.com/raeedalhendy/Edujar"
         },
         {
             id: 3,
@@ -124,7 +130,10 @@ export const Navlinks = [
             projectname : "DashStack",
             technologies : "Technologies :",
             technologiesused : "React MultiPage Api:Axios",
-            title : "Dashborad"
+            title : "Dashborad" ,
+            desc : "It is a dashboard application designed to manage data and information in an organized and efficient manner. The app relies on technologies like React and Axios to create dynamic, easy-to-interact user interfaces. DashStack provides users with powerful analytical tools with advanced graphical display of their data, which helps in making smarter and more effective decisions. Responsive and simple design makes accessing and managing information easy and fast on various devices.",
+            date : "1/8/2024",
+            github: "https://github.com/raeedalhendy/DashStack"
         },
         {
             id: 4,
@@ -133,6 +142,9 @@ export const Navlinks = [
             projectname : "Cozy",
             technologies : "Technologies :",
             technologiesused : "Html Css Javascript",
-            title: "Online store"
+            title: "Online store" ,
+            desc: "Cozy is an online store that offers a variety of products. The site features a customized user interface, with a smooth and free browsing experience, allowing users to easily browse products and purchase what they want with complete comfort.",
+            date : "12/6/2024",
+            github: "https://github.com/raeedalhendy/Cozy"
         }
     ]

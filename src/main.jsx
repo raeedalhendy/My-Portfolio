@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import AllPage from './components/Home/AllPage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import ProjetcDetiles from './components/Home/CreativeWorks/ProjetcDetiles';
+import ProjectDetiles from './components/Home/CreativeWorks/ProjectDetiles';
+import { Slide } from 'react-toastify';
 
 const router = createBrowserRouter([
   {
@@ -12,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/project-details/:id',
-    element: <ProjetcDetiles />
+    element: <ProjectDetiles />
   }
 ]);
 
