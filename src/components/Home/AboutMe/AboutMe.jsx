@@ -23,10 +23,10 @@ export default function AboutMe() {
         </div>
         <div className="  dark:text-white text ">
             <h2 className="nav-text text-6xl font-bold mb-4">About Me</h2>
-            <p className=" nav-text2 mb-6 text-lg text-gray-500 dark:text-gray-300 ">"Interested in the field of Programming, especially Web Development, I always strive to move forward and gain new experiences."</p>
+            <p className="  mb-6 text-xl text-gray-500 dark:text-gray-300 ">"Interested in the field of Programming, especially Web Development, I always strive to move forward and gain new experiences."</p>
             <div>
                 {skills.map((skill) => (
-                <div key={skill.name} className="mb-4 nav-text2">
+                <div key={skill.name} className="mb-4 text-xl">
                     <div className="flex justify-between mb-1">
                     <span>{skill.name}</span>
                     <span>{skill.level}%</span>

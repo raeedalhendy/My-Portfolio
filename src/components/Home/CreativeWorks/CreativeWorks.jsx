@@ -8,7 +8,7 @@ import { projectItem } from "./../../../data";
 export default function CreativeWorks() {
   return (
     <div id='Projects' className='px-10 w-full mt-5'>
-        <h1 className='text-customPurple text-xl font-medium'>Projects</h1>
+        <h1 className='text-customPurple text-md font-medium'>Projects</h1>
         <div className='flex justify-between flex-wrap'>
             <div className='flex '>
                 <h1 className='text text-black font-bold text-4xl dark:text-white'>

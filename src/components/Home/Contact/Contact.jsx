@@ -35,14 +35,14 @@ export default function Contact() {
   return (
       <div id='Contact' className='px-16 mt-6'>
         <ToastContainer/>
-        <h1 className='text-customPurple text-xl font-medium'>Contact</h1>
+        <h1 className='text-customPurple text-md font-medium'>Contact</h1>
             <div className='flex '>
                 <h1 className='text text-black font-bold text-4xl dark:text-white'>
                     Let’s Discuss Your <span className='text-customPurple'>Projects</span>
                 </h1>
             </div>
-            <div className='Container-Contact flex justify-between'>
-                    <div className='flex flex-col gap-6 mt-14'>
+            <div className='Container-Contact w-full flex  justify-between'>
+                    <div className='cotainer-con flex flex-col gap-6 mt-14'>
                         <div className='Contact flex gap-5'>
                             <img src={call} alt="" />
                             <div>
@@ -52,7 +52,7 @@ export default function Contact() {
                         </div>
                         <div className='Contact flex gap-5'>
                             <img src={email} alt="" />
-                            <div>
+                            <div className='contact'>
                                 <h1 className='dark:text-white text-gray-400'>Email Me</h1>
                                 <h1 className='text2 mt-5 dark:text-white'>raeed.alhendy4@gmail.com</h1>
                             </div>
@@ -65,7 +65,7 @@ export default function Contact() {
                             </div>
                         </div>
                     </div>
-                    <form onSubmit={onSubmit} className='flex flex-col gap-6 w-2/4' >
+                    <form onSubmit={onSubmit} className='input flex flex-col gap-6 w-2/4' >
                         <div className='flex  gap-5'>
                             <input className='h-14' type="text" placeholder='Full Name'name='name' required />
                             <input className='h-14' type="email" placeholder='Your Email' name='email' />

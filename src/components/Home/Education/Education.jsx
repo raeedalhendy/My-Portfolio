@@ -11,7 +11,7 @@ import "./Education.css"
 
 export default function () {
   return (
-    <div id='Education'  className='mt-28  px-14 flex flex-col gap-24  relative w-full '>
+    <div id='Education'  className='mt-14  px-14 flex flex-col gap-24  relative w-full '>
             <img className='ball absolute right-0' src={ball2} alt="" />
             <div className='flex  justify-center items-center'>
                 <h1 className=' dark:text-white text  text-5xl font-bold'>Education & Experience</h1>
