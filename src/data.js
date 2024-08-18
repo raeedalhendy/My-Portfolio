@@ -87,7 +87,7 @@ export const Navlinks = [
     export const educationItem = [
         {
             education: "Education!",
-            Title : " Bachelor's degree in Accounting The First Technical and Commercial Institute in Damascus, 2019 - 2023 Specialized in engineering "
+            Title : " Bachelor's degree in Accounting The First Technical and Commercial Institute in Damascus, 2019 - 2023 Specialized in accounting "
         }
     ]
             export const educationItem2 = [
