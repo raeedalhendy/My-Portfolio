@@ -11,7 +11,7 @@ export default function AboutMe() {
         { name: 'CSS3', level: 90 },
         { name: 'JavaScript', level: 80 },
         { name: 'React.Js', level: 85 },
-        { name: 'Ristful api', level: 85 },
+        { name: 'Restful api', level: 85 },
         { name: 'Tailwind', level: 90 },
 
     ];
