@@ -5,7 +5,6 @@ import CTASection from "./CTASection/CTASection";
 import CreativeWorks from "./CreativeWorks/CreativeWorks";
 import {LINE} from "./../../data"
 import {lineW} from "./../../data"
-import "../Home/Home.css"
 import Contact from "./Contact/Contact";
 export default function Home() {
   

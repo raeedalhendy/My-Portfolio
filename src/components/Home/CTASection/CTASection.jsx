@@ -1,15 +1,14 @@
 import React from 'react'
-import "./CtASection.css"
 import Line from "./../../../assets/img/Lines.png";
 import Up from "./../../../assets/img/Up.png"
 
 export default function CTASection() {
   return (
-    <div className='Con-CTA h-full flex justify-center items-center  relative'>
-        <a href="#Home" className='dark:hidden '><img className='UP absolute right-2 top-0' src={Up} alt="Home" /></a>
-        <div className='CTA w-4/5 px-  bg-customPurple h-80 rounded-xl flex items-center justify-center gap-16 relative'>
-        <img src={Line} className='w-screen h-full'/>
-        <div className='cta absolute pl-10'>
+    <div className=' h-full flex justify-center items-center  '>
+        <div className=' w-4/5 px-  bg-customPurple h-80 rounded-xl flex items-center justify-center relative'>
+        <a href="#Home"><img className=' z-10 absolute right-0 top-0' src={Up} /></a>
+        <img src={Line} className='w-full'/>
+        <div className=' absolute pl-10'>
             <h1 className='text text-white font-bold text-3xl'>
                 Try me out, risk free!
             </h1>
@@ -17,9 +16,9 @@ export default function CTASection() {
             I’ll refund your deposit, no questions asked</p>
             <a href="#Contact" className=' hidden BTN-C dark:text-customPurple w-32 h-16 text-white dark:bg-white  items-center justify-center  rounded-xl '> Contact</a>
 
+        <div className=' '>
+        <a href="#Contact" className=' dark:text-customPurple w-32 h-16 text-white dark:bg-white flex items-center justify-center  rounded-xl '> Contact</a>
         </div>
-        <div className='absolute top-1/4 right-0 pr-8'>
-        <a href="#Contact" className='BTN-C2 dark:text-customPurple w-32 h-16 text-white dark:bg-white flex items-center justify-center  rounded-xl '> Contact</a>
         </div>
         </div>
     </div>

@@ -15,7 +15,8 @@ const NavItems = ({ links }) => {
             className={` dark:text-white font-semibold cursor-pointer  flex items-center justify-center h-8 w-24 rounded-2xl hover:text-white hover:bg-[#583FBC] ${
                 selectedIndex === index ? 'bg-[#583FBC] text-white dark:bg-[#583FBC] ' : 'text-black'
             }`}
-            onClick={() => handleClick(index)}>
+            onClick={() => handleClick(index)}
+            >
             <a href={el.path}>{el.title}</a>
             </li>
         ))}

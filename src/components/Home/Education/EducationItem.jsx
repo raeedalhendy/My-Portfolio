@@ -6,7 +6,7 @@ export default function EducationItem({Item}) {
         {Item.map((el)=>(
                 <div className='flex flex-col gap-8'>
                     <div>
-                        <h1 className='text font-medium text-3xl text-black dark:text-white'>{el.education}</h1>
+                        <h1 className=' font-medium text-2xl sm:text-2xl md:text-3xl text-black dark:text-white'>{el.education}</h1>
                     </div>
                     <div>
                         <h1 className='text2 font-normal text-gray-400 '>{el.Title}</h1>

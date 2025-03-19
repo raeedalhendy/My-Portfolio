@@ -28,13 +28,11 @@ export default function ProjectDetiles() {
     setIsModalOpen(false)
   }
 
-  // الانتقال إلى المشروع التالي
   const goToNextProject = () => {
     const currentIndex = projectItem.findIndex(item => item.id === currentProjectId)
     const nextIndex = (currentIndex + 1) % projectItem.length
     setCurrentProjectId(projectItem[nextIndex].id);
   }
-    // الغودة إلى المشروع السابق
   const goToBackProject = () => {
     const currentIndex = projectItem.findIndex(item => item.id === currentProjectId)
     const nextIndex = (currentIndex - 1) % projectItem.length
@@ -48,7 +46,7 @@ export default function ProjectDetiles() {
         <div className='flex flex-col lg:flex-row w-full gap-5'>
           <div className='w-full lg:w-2/4'>
             <div className='relative group'>
-              <img className='rounded-3xl w-full transition-transform duration-300 ease-in-out transform group-hover:scale-105' src={project.projectimg} alt={project.projectname} />
+              <img className='rounded-2xl  transition-transform duration-300 ease-in-out transform group-hover:scale-105' src={project.projectimg} alt={project.projectname} />
               <div className='absolute inset-0 flex gap-14 justify-center items-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300'>
                 <Link to={project.demoProject}>
                   <img src={go} alt="Go to project" className='w-12 h-12' />

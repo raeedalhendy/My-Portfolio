@@ -10,5 +10,5 @@ export default function MainLayout() {
       <Home />
       <Footer/>
     </div>
-  );
+  )
 }

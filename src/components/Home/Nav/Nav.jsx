@@ -1,60 +1,48 @@
-import "./Nav.css";
-import {logos} from "./../../../data"
-import NavItmes from "./NavItmes"
+import NavItmes from "./NavItmes";
 import { Navlinks } from "./../../../data";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import MoboNav from "./MoboNav";
 import { useState } from "react";
 
-
-
-
-const OpenNav = ()=>{
-    const open = document.querySelector(".nav-mobo-open")
-    const close = document.querySelector(".nav-mobo-close")
-    const mobonav = document.querySelector(".Nav-Mobo")
-if (open.style.display = "flex") {
-    open.style.display = "none"
-    mobonav.style.display = "flex "
-}
-if (close.style.display = "none") {
-    close.style.display = "flex"
-}
-}
-const CloseNav = ()=>{
-    const mobonav = document.querySelector(".Nav-Mobo")
-    const open = document.querySelector(".nav-mobo-open")
-    const close = document.querySelector(".nav-mobo-close")
-    if (close.style.display = "flex") {
-        close.style.display = "none"
-        mobonav.style.display= "none"
-    }
-    if (open.style.display = "none") {
-        open.style.display = "flex"
-    }
-}
-
 export default function Nav() {
     const [darkMode, setDarkMode] = useState(false);
+    const [isNavOpen, setIsNavOpen] = useState(false);
 
     const toggleDarkMode = () => {
         setDarkMode(!darkMode);
         document.documentElement.classList.toggle('dark', !darkMode);
     };
 
-    return (
-    <nav className="contaier-nav px-16  fixed  top-0 w-full  bg-white opacity-95  dark:bg-Dark dark:bg-opacity-90 z-40 ">
-        <div className="flex items-center justify-between ">
-            <img className="logo  h-28 rounded-full " src={logos} />
+    const toggleNav = () => {
+        setIsNavOpen(!isNavOpen);
+    };
 
-            <NavItmes links ={Navlinks}/>
-            <h1 onClick={toggleDarkMode} className=" dark:text-white moon text-5xl hover:text-customPurple  dark:hover:text-customPurple cursor-pointer ">
-                {darkMode ? <FontAwesomeIcon icon="fa-regular fa-sun" /> : <FontAwesomeIcon icon="fa-regular fa-moon" />}
-            </h1>
-            <h1 onClick={OpenNav} className="dark:text-white nav-mobo-open hidden text-3xl text-customPurple"><FontAwesomeIcon icon="fa-solid fa-bars-staggered" /></h1>
-            <h1 onClick={CloseNav} className="dark:text-white nav-mobo-close hidden text-3xl text-customPurple"><FontAwesomeIcon icon="fa-solid fa-x" /></h1>
-        </div>
-        <MoboNav links ={Navlinks}/>
-    </nav>
-    )
+    return (
+        <nav className="px-4 md:px-16 fixed top-0 w-full h-16 flex bg-white opacity-95 dark:bg-Dark dark:bg-opacity-90 z-40">
+            <div className="flex items-center justify-between w-full">
+                <div className="hidden md:flex">
+                    <NavItmes links={Navlinks} />
+                </div>
+                <button 
+                    onClick={toggleDarkMode} 
+                    className="dark:text-white text-5xl hover:text-customPurple dark:hover:text-customPurple cursor-pointer">
+                    {darkMode ? <FontAwesomeIcon icon="fa-regular fa-sun" /> : <FontAwesomeIcon icon="fa-regular fa-moon" />}
+                </button>
+                <button 
+                    onClick={toggleNav} 
+                    className={`dark:text-white text-3xl text-customPurple ${isNavOpen ? 'hidden' : 'block'} md:hidden`}>
+                    <FontAwesomeIcon icon="fa-solid fa-bars-staggered" />
+                </button>
+                <button 
+                    onClick={toggleNav} 
+                    className={`dark:text-white text-2xl text-customPurple ${isNavOpen ? 'block' : 'hidden'} md:hidden`}>
+                    <FontAwesomeIcon icon="fa-solid fa-x" />
+                </button>
+            </div>
+
+            <div className={`fixed top-0 left-0 w-3/4 rounded-sm bg-customPurple dark:bg-Dark z-50 transition-transform duration-300 ${isNavOpen ? "translate-x-0" : "-translate-x-full"} md:hidden`}>
+                <MoboNav links={Navlinks} />
+            </div>
+        </nav>
+    );
 }

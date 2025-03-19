@@ -7,7 +7,7 @@ return (
         {Item2.map((el)=>(
                 <div className='flex flex-col gap-5'>
                     <div>
-                        <h1 className='text font-medium text-3xl text-black dark:text-white'>{el.experience}</h1>
+                        <h1 className='text font-medium text-2xl sm:text-2xl md:text-3xl dark:text-white'>{el.experience}</h1>
                     </div>
                     <div>
                         <Link className='text font-medium text-2xl  text-customPurple' to="https://vica.website/">{el.Vica}</Link>
