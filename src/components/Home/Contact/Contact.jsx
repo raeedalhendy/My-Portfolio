@@ -41,21 +41,25 @@ export default function Contact() {
                     <img src={call} alt="Call" />
                     <div>
                         <h1 className='text-gray-400 dark:text-white'>Call Me</h1>
-                        <h1 className='mt-4 text-xl dark:text-white'>+963988141718</h1>
+                        <h1 className=' text-xl dark:text-white'>+963988141718</h1>
+                    </div>
+                </div>
+                
+                <div className='flex gap-5'>
+                    <img src={address} alt="Address" />
+                    <div>
+                        <h1 className='text-gray-400 dark:text-white'>Address</h1>
+                        <h1 className=' text-xl dark:text-white'>Damascus, Syria</h1>
                     </div>
                 </div>
                 <div className='flex gap-5'>
                     <img src={email} alt="Email" />
                     <div>
                         <h1 className='text-gray-400 dark:text-white'>Email Me</h1>
-                        <h1 className='mt-5 dark:text-white'>\</h1>
-                    </div>
-                </div>
-                <div className='flex gap-5'>
-                    <img src={address} alt="Address" />
-                    <div>
-                        <h1 className='text-gray-400 dark:text-white'>Address</h1>
-                        <h1 className='mt-4 text-xl dark:text-white'>Damascus, Syria</h1>
+                        <div className='flex flex-wrap'>
+                        <h1 className=' text-xl dark:text-white'>raeed.alhendy4@</h1>
+                        <h1 className=' text-xl dark:text-white'>gmail.com</h1>
+                        </div>
                     </div>
                 </div>
             </div>

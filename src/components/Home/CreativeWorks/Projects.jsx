@@ -18,7 +18,7 @@ export default function ({ items }) {
             </div>
           </div>
           <div className='flex justify-between items-center p-4'>
-            <h1 className='font-semibold text-lg dark:text-white'>{el.title}</h1>
+            <h1 className='font-semibold text-lg dark:text-black'>{el.title}</h1>
             <Link to={`/project-details/${el.id}`}>
               <img src={go} alt="Go to details" className='w-6 h-6' />
             </Link>
